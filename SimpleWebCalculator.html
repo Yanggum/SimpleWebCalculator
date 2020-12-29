@@ -1,0 +1,50 @@
+<html>
+<head>
+
+</head>
+<body>
+	<script>
+		function sum(){
+			var oprval1 = document.getElementById("ipOpr1").value;
+			var oprval2 = document.getElementById("ipOpr2").value;			
+			
+			document.getElementById("ipResult").value = parseInt(oprval1) + parseInt(oprval2);
+		}
+		
+		function sub(){
+			var oprval1 = document.getElementById("ipOpr1").value;
+			var oprval2 = document.getElementById("ipOpr2").value;			
+			
+			document.getElementById("ipResult").value = parseInt(oprval1) - parseInt(oprval2);
+		}
+		
+		function multiple(){
+			var oprval1 = document.getElementById("ipOpr1").value;
+			var oprval2 = document.getElementById("ipOpr2").value;			
+			
+			document.getElementById("ipResult").value = parseInt(oprval1) * parseInt(oprval2);
+		}
+		
+		function divide(){
+			var oprval1 = document.getElementById("ipOpr1").value;
+			var oprval2 = document.getElementById("ipOpr2").value;			
+			
+			document.getElementById("ipResult").value = parseInt(oprval1) / parseInt(oprval2);
+		}	
+	</script>
+	
+	Operend 1
+	<input type="text" id="ipOpr1">
+	Operend 2
+	<input type="text" id="ipOpr2">
+	Result
+	<input type="text" id="ipResult">
+	
+	<button type="button" id="btnSum" onclick="sum()">+</button>
+	<button type="button" id="btnSub" onclick="sub()">-</button>
+	<button type="button" id="btnMul" onclick="multiple()">*</button>
+	<button type="button" id="btnDiv" onclick="divide()">/</button>
+
+
+</body>
+</html>
